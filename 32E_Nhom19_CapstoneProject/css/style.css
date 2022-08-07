@@ -208,6 +208,12 @@ header .container .main_header .content_right .content_main .link .register {
   height: 530px;
   overflow: hidden;
 }
+@media (max-width: 767.98px) {
+  .carousel .container {
+    width: auto;
+    height: 200px;
+  }
+}
 .carousel .container .bg img {
   position: absolute;
   width: 1334px;
@@ -216,6 +222,16 @@ header .container .main_header .content_right .content_main .link .register {
   right: auto;
   bottom: auto;
   left: -36px;
+}
+@media (max-width: 767.98px) {
+  .carousel .container .bg img {
+    width: 720px;
+    height: 180px;
+    top: 12px;
+    right: auto;
+    bottom: auto;
+    left: -12px;
+  }
 }
 .carousel .container .row .col-left img {
   position: absolute;
@@ -310,13 +326,13 @@ header .container .main_header .content_right .content_main .link .register {
     font-size: 10px;
     position: absolute;
     top: 90px;
-    right: 63px;
+    right: 90px;
     bottom: auto;
     left: auto;
-    font-size: 20px;
+    font-size: 13px;
     font-weight: 300;
     color: #fff;
-    line-height: 24px;
+    line-height: 12px;
     background: #F8B653;
     padding: 7px 19px;
     border: none;
@@ -331,12 +347,30 @@ header .container .main_header .content_right .content_main .link .register {
   bottom: auto;
   left: 18px;
 }
+@media (max-width: 767.98px) {
+  .carousel .container .navigation .navi-left img {
+    position: absolute;
+    top: 30px;
+    right: auto;
+    bottom: auto;
+    left: 10px;
+  }
+}
 .carousel .container .navigation .navi-right img {
   position: absolute;
   top: 175px;
   right: 12.86px;
   bottom: auto;
   left: auto;
+}
+@media (max-width: 767.98px) {
+  .carousel .container .navigation .navi-right img {
+    position: absolute;
+    top: 30px;
+    right: 6px;
+    bottom: auto;
+    left: auto;
+  }
 }
 .carousel .container .pagination .pagi1 {
   border: 1px solid rgba(0, 0, 0, 0.13);
@@ -351,6 +385,11 @@ header .container .main_header .content_right .content_main .link .register {
   border: 1px solid rgba(0, 0, 0, 0.13);
   cursor: pointer;
 }
+@media (max-width: 767.98px) {
+  .carousel .container .pagination .pagi1 {
+    display: none;
+  }
+}
 .carousel .container .pagination .pagi2 {
   border: 1px solid rgba(0, 0, 0, 0.13);
   position: absolute;
@@ -364,6 +403,11 @@ header .container .main_header .content_right .content_main .link .register {
   border: 1px solid rgba(0, 0, 0, 0.13);
   cursor: pointer;
 }
+@media (max-width: 767.98px) {
+  .carousel .container .pagination .pagi2 {
+    display: none;
+  }
+}
 .carousel .container .pagination .pagi3 {
   border: 1px solid rgba(0, 0, 0, 0.13);
   position: absolute;
@@ -376,4 +420,91 @@ header .container .main_header .content_right .content_main .link .register {
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.13);
   cursor: pointer;
+}
+@media (max-width: 767.98px) {
+  .carousel .container .pagination .pagi3 {
+    display: none;
+  }
+}
+
+.products {
+  padding-top: 16px;
+}
+.products .container .title {
+  text-align: center;
+  padding-bottom: 89px;
+}
+.products .container .title h1 {
+  font-size: 40px;
+  font-weight: 400;
+  color: #000;
+  line-height: 24px;
+}
+.products .container .row .col {
+  margin-bottom: 50px;
+}
+.products .container .row .col .card {
+  width: 334px;
+  height: 369px;
+}
+.products .container .row .col .card img {
+  position: absolute;
+  width: 220px;
+  height: 156px;
+  top: 45px;
+  right: 57px;
+  bottom: 168px;
+  left: 57px;
+}
+.products .container .row .col .card h3 {
+  position: absolute;
+  font-size: 24px;
+  font-weight: 300;
+  color: #000;
+  line-height: 24px;
+  top: 231px;
+  right: 126px;
+  bottom: 109px;
+  left: 23px;
+}
+.products .container .row .col .card p {
+  position: absolute;
+  top: 268px;
+  right: 158px;
+  bottom: 77px;
+  left: 23px;
+}
+.products .container .row .col .card a {
+  position: absolute;
+  text-decoration: none;
+  width: 175px;
+  height: 64px;
+  font-size: 24px;
+  font-weight: 200;
+  color: #000;
+  line-height: 29px;
+  background: #E1B067;
+  padding: 18px 39px;
+  border: none;
+  border-radius: none;
+  cursor: pointer;
+  top: auto;
+  right: auto;
+  bottom: 0;
+  left: 0;
+}
+.products .container .row .col .card span {
+  position: absolute;
+  background-color: #DEDDDC;
+  padding: 17px 50px;
+  width: 160px;
+  height: 64px;
+  font-size: 24px;
+  font-weight: 600;
+  color: #000;
+  line-height: 24px;
+  top: auto;
+  right: 0;
+  bottom: 0;
+  left: auto;
 }
