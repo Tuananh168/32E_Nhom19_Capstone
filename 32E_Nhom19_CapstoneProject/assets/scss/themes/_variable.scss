@@ -1,0 +1,81 @@
+$bg-c1-button: #F8B653;
+$bg-c1-light: #fff;
+$bg-transparent: rgba(0, 0, 0, 0);
+$bg-none: none;
+$bg-header: #000;
+
+/*-----text: css cho text ---------*/
+
+//text-color: màu của text
+$text-c1-button: #E1B067;
+$text-c1-dark: #000;
+$text-c1-light: #fff;
+//text-size
+$text-xs: 10px;
+$text-sm: 13px;
+$text-base: 16px;
+$text-xl: 18px;
+$text-2xl: 20px;
+$text-3xl: 30px;
+$text-4xl: 40px;
+$text-5xl: 50px;
+$text-6xl: 60px;
+$text-7xl: 70px;
+//text-font-weight
+$text-light: 300;
+$text-regular: 400;
+$text-semibold: 600;
+$text-bold: 700;
+$lh-sm: 12px;
+$lh-2xl: 24px;
+$lh-3xl: 30px;
+$lh-4xl: 48px;
+// width :
+$w-pagi-xl: 15px;
+$h-pagi-xl: 15px;
+$br-button: 50%;
+$bd-button: 1px solid rgba(0, 0, 0, .13);
+//@include(include): Dùng để format truyền động giá trị cho các thuộc tính css
+//@extend: Định nghĩa trước các class css có thể tái sử dụng 
+
+/* -------------------- mixin -----------*/
+
+@mixin text($fs: $text-base, $fw: $text-regular, $c: $text-c1-dark, $lh: $lh-2xl) {
+    font-size: $fs;
+    font-weight: $fw;
+    color: $c;
+    line-height: $lh;
+}
+
+@mixin button($fs, $fw, $c, $lh, $bg, $pd, $bd, $br) {
+    // $bg-hover, $c-hover//) {
+    // font-size: 16px;
+    // font-weight: 600;
+    // color: #000;
+    @include text($fs, $fw, $c, $lh);
+    background: $bg;
+    padding: $pd;
+    border: $bd;
+    border-radius: $br;
+    cursor: pointer;
+    // &:hover {
+    //     background: $bg-hover;
+    //     color: $c-hover;
+    // }
+}
+
+@mixin local($top, $right, $bottom, $left) {
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+    left: $left;
+}
+
+@mixin pagi($top, $right, $bottom, $left, $w-bagi, $h-pagi, $br, $bd) {
+    @include local($top, $right, $bottom, $left);
+    width: $w-bagi;
+    height: $h-pagi;
+    border-radius: $br;
+    border: $bd;
+    cursor: pointer;
+}
