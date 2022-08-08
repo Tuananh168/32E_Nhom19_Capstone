@@ -202,6 +202,7 @@ header {
                 position: relative;
                 h1 {
                     position: absolute;
+                    width: 196px;
                     @include text($text-3xl, $text-light, $text-c1-dark, $lh-2xl);
                     @include local(67px, 557px, 427px, 527px);
                     @media (max-width: 991.98px) {
@@ -214,6 +215,7 @@ header {
             }
             p {
                 position: absolute;
+                width: 503px;
                 @include text($text-base, $text-regular, $text-c1-detail, 19px);
                 @include local(112px, 250px, 328px, 527px);
                 @media (max-width: 991.98px) {
