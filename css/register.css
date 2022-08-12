@@ -374,17 +374,19 @@ header .navbarmain .nav-right p a {
 @media only screen and (max-width: 1200px) {
   .content .form-register .form-content-right .form-group .warning {
     left: 380px;
+    width: 117px;
   }
 }
 @media only screen and (max-width: 768px) {
   .content .form-register .form-content-right .form-group .warning {
     left: 154px;
+    width: 148px;
   }
 }
 @media only screen and (max-width: 576px) {
   .content .form-register .form-content-right .form-group .warning {
     left: 154px;
-    width: 111px;
+    width: 100px;
   }
 }
 .content .form-register .form-content-right .form-group .err-warning {

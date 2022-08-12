@@ -68,7 +68,7 @@ function CheckPassword(value, selectorError, name) {
         document.querySelector(selectorError).innerHTML = '';
         return true;
     }
-    document.querySelector(selectorError).innerHTML = `<span class ='err-warning'>${name + ' có độ dài 6 đến 10 ký tự và phải chứa ít nhất 1 ký tự số, 1 ký tự in hoa, 1 ký tự đặc biệt!'}</span>`;
+    document.querySelector(selectorError).innerHTML = `<span class ='err-warning'><br>${name + ' có độ dài 6 đến 10 ký tự và phải chứa ít nhất 1 ký tự số, 1 ký tự in hoa, 1 ký tự đặc biệt!'}</span>`;
 
     return false;
 }
@@ -106,7 +106,7 @@ function matchPassword(id1, id2, selectorError) {
         document.querySelector(selectorError).innerHTML = `<span class ='err-warning'>Password chưa trùng khớp</span>`;
         return false;
     } 
-        document.querySelector(selectorError).innerHTML = 'Password đã khớp'; 
+        document.querySelector(selectorError).innerHTML = ''; 
         return true;
       
     }  

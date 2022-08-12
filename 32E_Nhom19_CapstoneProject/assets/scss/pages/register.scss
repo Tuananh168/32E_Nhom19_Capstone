@@ -441,17 +441,20 @@ header {
 
                     @media only screen and (max-width: 1200px) {
                         left: 380px;
+                        width: 117px;
                     }
 
 
                     @media only screen and (max-width: 768px) {
                         left: 154px;
+                        width: 148px;
                     }
 
                     @media only screen and (max-width: 576px) {
                         left: 154px;
-                        width: 111px;
+                        width: 100px;
                     }
+
                 }
 
                 .err-warning {
