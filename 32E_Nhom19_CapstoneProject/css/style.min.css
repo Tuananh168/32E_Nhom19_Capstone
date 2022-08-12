@@ -1,4 +1,5 @@
 @import "../scss/pages/detail/detail.css";
+@import "../assets/scss/pages/register.css";
 * {
   margin: 0;
   padding: 0;
