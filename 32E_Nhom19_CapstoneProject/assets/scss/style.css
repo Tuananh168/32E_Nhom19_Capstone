@@ -452,34 +452,35 @@ header .container .main_header .content_right .content_main .link .register {
   width: 334px;
   height: 369px;
 }
-.products .container .row .col .card img {
+.products .container .row .col .card .img-top img {
   position: absolute;
   width: 220px;
-  height: 156px;
-  top: 45px;
+  height: 220px;
+  top: 20px;
   right: 57px;
   bottom: 168px;
   left: 57px;
 }
 .products .container .row .col .card h3 {
   position: absolute;
-  width: 185px;
+  width: 300px;
   font-size: 24px;
   font-weight: 300;
   color: #000;
   line-height: 24px;
-  top: 231px;
+  top: 200px;
   right: 126px;
   bottom: 109px;
   left: 23px;
 }
 .products .container .row .col .card p {
   position: absolute;
+  width: 250px;
   font-size: 20px;
   font-weight: 300;
   color: #CBC9C9;
   line-height: 24px;
-  top: 268px;
+  top: 255px;
   right: 158px;
   bottom: 77px;
   left: 23px;
@@ -507,7 +508,7 @@ header .container .main_header .content_right .content_main .link .register {
   position: absolute;
   background-color: #DEDDDC;
   padding: 17px 50px;
-  width: 160px;
+  width: 200px;
   height: 64px;
   font-size: 24px;
   font-weight: 600;
