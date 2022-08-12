@@ -2,72 +2,170 @@
 <html lang="en">
 
 <head>
-    <title>32E_Nhom19_CapstoneProject_register</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>32E_Nhom19_CapstoneProject_register</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <!-- font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap" rel="stylesheet">
-    <!-- css -->
-    <link rel="stylesheet" href="../../css/style.min.css">
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- css -->
+  <link rel="stylesheet" href="../../css/style.min.css">
 
 
 
 </head>
 
 <body>
-<header>
-    <!-- Black with white text -->
-    <nav class="navbarmain navbar-expand-sm  navbar-dark">
+  <header>
+    <div class="container">
+      <!-- Black with white text -->
+      <nav class="navbarmain navbar-expand-sm  navbar-dark">
         <div class="nav">
-            <div class="logoCyber">
-                <img class="img-fluid" src="../../assets/images/image 3.png" alt=".">
-            </div>
+          <div class="logoCyber">
+            <a href="index.html"><img class="img-fluid" src="../../assets/images/image 3.png" alt="."></a>
+
+          </div>
         </div>
         <div class="nav-right">
-            <div class="cart">
-                <img class="img-fluid" src="../../assets/images/image 1.png" alt=".">
-                <span>(1)</span>
-            </div>
-            <p>
-                <a href="#">Login</a>
-            </p>
-            <p>
-                <a href="#">Register</a>
-            </p>
-            
+          <div class="cart">
+            <img class="img-fluid" src="../../assets/images/image 1.png" alt=".">
+            <span>(1)</span>
+          </div>
+          <p>
+            <a href="#">Login</a>
+          </p>
+          <p>
+            <a href="#">Register</a>
+          </p>
+
         </div>
 
-    </nav>
-    <nav class="navbarlight navbar-expand-sm bg-light navbar-light">
-        <ul class="navbar-nav">
-          <li class="nav-item active nav-active">
-            <a class="nav-link navActive" href="#">Home</a>
-          </li>
-          <li class="nav-item navlight">
-            <a class="nav-link nav-opacity" href="#">Men</a>
-          </li>
-          <li class="nav-item navlight">
-            <a class="nav-link nav-opacity" href="#">Woman</a>
-          </li>
-          <li class="nav-item navlight">
-            <a class="nav-link nav-list" href="#">Kid</a>
-          </li>
-          <li class="nav-item navlight">
-            <a class="nav-link nav-list" href="#">Sport</a>
-          </li>
-         
-        </ul>
       </nav>
 
-</header>
+    </div>
+  </header>
+  <div class="container">
+    <nav class="navbarlight navbar-expand-sm bg-light navbar-light">
+      <ul class="navbar-nav">
+        <li class="nav-item active nav-active">
+          <a class="nav-link navActive" href="#">Home</a>
+        </li>
+        <li class="nav-item navlight">
+          <a class="nav-link nav-opacity" href="#">Men</a>
+        </li>
+        <li class="nav-item navlight">
+          <a class="nav-link nav-opacity" href="#">Woman</a>
+        </li>
+        <li class="nav-item navlight">
+          <a class="nav-link nav-list" href="#">Kid</a>
+        </li>
+        <li class="nav-item navlight">
+          <a class="nav-link nav-list" href="#">Sport</a>
+        </li>
+
+      </ul>
+    </nav>
+  </div>
+  <section class="content">
+    <div class="container">
+      <!-- <div class="container"> -->
+
+      <h2>Register
+
+      </h2>
+      <div class="alert noti" id="noti">
+
+      </div>
+      <form class="form-register ">
+        <div class="form-content-left">
+          <div class="form-group" id="notifi">
+            
+            <input type="email" class="register-control" id="email" placeholder="email">
+            <div class="warning" id="warningEmail">
+             
+            </div>
+           <div id="errEmail">
+            <!-- <span class="err-warning"></span> -->
+           </div>
+          </div>
+          <div class="form-group">
+            <input type="password" class="register-control" id="password" placeholder="password">
+            <div class="warning" id="warningPW">
+              <!-- <span>(*)</span> -->
+            </div>
+            <span class="err-warning" id="errPW"></span>
+          </div>
+          <div class="form-group">
+
+            <input type="password" class="register-control" id="passwordConfirm" placeholder="password confirm">
+            <div class="warning" id="warningPW2">
+              <!-- <span>(*)</span> -->
+            </div>
+            <span class="err-warning" id="errPW2"></span>
+
+          </div>
+        </div>
+        <div class="form-content-right">
+          <div class="form-group">
+            <input type="text" class="register-control" id="name" placeholder="name">
+            <div class="warning" id="warningName">
+              <!-- <span>(*)</span> -->
+            </div>
+            <span class="err-warning" id="errName"></span>
+          </div>
+
+          <div class="form-group">
+            <input type="text" class="register-control" id="phone" placeholder="phone">
+            <div class="warning" id="warningPhone">
+
+            </div>
+            <span class="err-warning" id="errPhone"></span>
+          </div>
+
+          <div class="option-choose">
+
+            <span>Gender</span>
+            <!-- <span class="warning-gender" id="warningGender"></span> -->
+
+            <div class="form-check register-check">
+              <label class="form-check-label">
+                <input class="form-check-input input-check-1" type="radio" name="genderS" value="true"
+                  checked="checked">Male</input>
+              </label>
+            </div>
+            <div class="form-check register-check">
+              <label class="form-check-label">
+                <input class="form-check-input input-check-2" type="radio" name="genderS" value="false">Female</input>
+              </label>
+            </div>
+          </div>
+
+          <button type="button" class="btn btnSubmit" id="btnSubmit">
+            <span>Submit</span>
+          </button>
+        </div>
+      </form>
+
+      <!-- <div class="noti" id="noti"></div> -->
+      <!-- </div> -->
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <img src="../../assets/images/image 8.png" alt=".">
+    </div>
+
+  </footer>
 
 
 
@@ -96,17 +194,28 @@
 
 
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.0.0-alpha.1/axios.min.js"
+    integrity="sha512-xIPqqrfvUAc/Cspuj7Bq0UtHNo/5qkdyngx6Vwt+tmbvTLDszzXM0G6c91LXmGrRx8KEPulT+AfOOez+TeVylg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+
+  <script src="../method/method.js"></script>
+
+  <script src="../models/personal.js"></script>
+  <script src="../controller/register.js"></script>
 </body>
 
 </html>
